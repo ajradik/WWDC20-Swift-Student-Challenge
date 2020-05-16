@@ -23,11 +23,11 @@ class SplashScreenViewController: UIViewController {
         stack.axis = .vertical
         stack.alignment = .fill
         stack.distribution  = .fillEqually
-        stack.spacing = 0
+        stack.spacing = -60
         
         let stackConstraints: [NSLayoutConstraint] = [
-            NSLayoutConstraint(item: stack, attribute: .height, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .height, multiplier: 0.6, constant: 0),
-            view.safeAreaLayoutGuide.topAnchor.constraint(equalTo: stack.topAnchor, constant: -20),
+            NSLayoutConstraint(item: stack, attribute: .height, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .height, multiplier: 0.8, constant: 0),
+            view.safeAreaLayoutGuide.topAnchor.constraint(equalTo: stack.topAnchor, constant: 60),
             NSLayoutConstraint(item: stack, attribute: .width, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .width, multiplier: 0.8, constant: 0),
             view.safeAreaLayoutGuide.centerXAnchor.constraint(equalTo: stack.centerXAnchor, constant: 0)
         ]
@@ -47,8 +47,8 @@ class SplashScreenViewController: UIViewController {
         stack.addArrangedSubview(welcomeLabel)
         
         let subLabel = UILabel()
-        subLabel.text = "PathFinder is an algorithm visualizer for the Breadth First Search and Depth First Search pathfinding algorithms.\n\nTo begin, draw walls on the grid using the wall draw tool. Make sure you add a start node and end node as well. Select a solve algorithm, hit the find path button, and watch magic happen!\n\nFeel free to drop a review, and enjoy :)"
-        subLabel.font = UIFont(name: "LexendDeca-Regular", size: 17)
+        subLabel.text = "PathFinder is an algorithm visualizer for the Breadth First Search, Depth First Search, and A* pathfinding algorithms.\n\nTo begin, draw walls on the grid using the wall draw tool by selecting the tool and dragging across the grid. Make sure you add a start node and an end node as well. Select a solve algorithm, hit the find path button, and watch magic happen!\n\n Thank you :)"
+        subLabel.font = UIFont(name: "LexendDeca-Regular", size: 26)
         subLabel.numberOfLines = 0
         subLabel.textAlignment = .center
         subLabel.textColor = UIColor.systemGray

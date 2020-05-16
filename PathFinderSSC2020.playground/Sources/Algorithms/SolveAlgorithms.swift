@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import StoreKit
 
 let SOLVE_ANIMATION_DURATION = 0.6
 let SOLVE_ANIMATION_DELAY: TimeInterval = 0
@@ -200,7 +199,6 @@ class SolveAlgorithms {
     
     static func requestReview() {
         if !reviewRequested {
-            SKStoreReviewController.requestReview()
             reviewRequested = true
         }
     }
@@ -333,7 +331,7 @@ class SolveAlgorithms {
     static func asyncDFSrecursiveHelper(nextCoordinates: (Int, Int), currentCoordinates: (Int, Int)) -> Bool {
         var isDone = false
         nodeAt(coordinates: nextCoordinates).parent = nodeAt(coordinates: currentCoordinates)
-        SolveAlgorithms.updateNode(node: nodeAt(coordinates: nextCoordinates), color: UIColor.systemYellow)
+        SolveAlgorithms.updateNode(node: nodeAt(coordinates: nextCoordinates), color: UIColor.systemGreen)
         usleep(useconds_t(SolveAlgorithms.speed))
         isDone = asyncDFSrecursive(currentCoordinates: nextCoordinates)
         
