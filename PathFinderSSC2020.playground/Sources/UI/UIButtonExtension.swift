@@ -2,8 +2,7 @@
 //  UIButtonExtension.swift
 //  PathFinder
 //
-//  Created by AJ Radik on 4/7/20.
-//  Copyright © 2020 AJ Radik. All rights reserved.
+//  Copyright © 2020 Artemas J. Radik. All rights reserved.
 //
 
 import Foundation
