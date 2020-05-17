@@ -4,7 +4,8 @@
 //  Hello Judge,
 //
 //  Please note that if the the window is too large or too small
-//  it can be rescaled by changing the parameters on line 19 below.
+//  it can be rescaled by changing the parameters on line 20 below.
+//  I recommend a fullscreen window.
 //
 //  Thank you! I hope you like my project.
 //
