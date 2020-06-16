@@ -1,4 +1,4 @@
-# WWDC2020Submission
+# WWDC20Submission
 Artemas J. Radik WWDC 2020 Swift Student Challenge Submission [ACCEPTED].
 
 Please note this project is a reformatted version of https://github.com/magnesiumm/PathFinder, version 1.2, 5/16/2020. It was reformatted in order to fit the Swift playground submission format requirement.
